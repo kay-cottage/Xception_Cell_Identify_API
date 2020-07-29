@@ -27,8 +27,14 @@ A program with Xception which can identify a variety of cells
 
 
 
-**Xception_Cell4_Stable_For_x6安装包4使用**
-zai
+**Xception_Cell4_Stable_For_amd64安装包使用**
+
+
+
+*Xception_Cell4_Stable_For_x64是一款拥有简洁GUI界面的神经网络细胞形态学识别程序*
+
+
+
 1.请先从release上下载.exe安装包安装，然后通过以下链接下载我已训练好的Xception神经网络模型，（4种细胞识别）
 
 
