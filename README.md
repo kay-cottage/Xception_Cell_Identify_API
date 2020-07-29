@@ -9,10 +9,7 @@ A program with Xception which can identify a variety of cells
 基于Xception深度可分离卷积神经网络训练的细胞形态识别软件
 
 
-目前能够比较准确识别（测试集准确率大于90%）嗜酸性粒细胞，嗜碱性粒细胞，中性粒细胞，与成熟红细胞4种！
-
-
-或者嗜酸性粒细胞，嗜碱性粒细胞，中性粒细胞，成熟红细胞，淋巴细胞，单核细胞与浆细胞7种！（后三者为差别更小的细粒度图像识别，由于数据非常有限，准确率有待提高!)
+目前能够比较准确识别（测试集准确率大于90%）嗜酸性粒细胞，嗜碱性粒细胞，中性粒细胞，与成熟红细胞4种！或者嗜酸性粒细胞，嗜碱性粒细胞，中性粒细胞，成熟红细胞，淋巴细胞，单核细胞与浆细胞7种！（后三者为差别更小的细粒度图像识别，由于数据非常有限，准确率有待提高!)
 
 
 
@@ -38,7 +35,7 @@ A program with Xception which can identify a variety of cells
 
 
 
-1.请先从release上下载.exe安装包安装，然后通过以下链接下载我已训练好的Xception神经网络模型，（4种细胞识别）
+1.请先从release上下载.exe安装包（已编译）安装，然后通过以下链接下载我已训练好的Xception神经网络模型，（4种细胞识别）
 
 
 链接：https://pan.baidu.com/s/1hdLoYS51IqcdVhB01w2yDw 提取码：X1z9
@@ -51,10 +48,7 @@ A program with Xception which can identify a variety of cells
 3.启动程序Xception_Cell4_Stable_For_amd64.exe,先点击model_path选择模型文件，点击识别，选择需要识别地细胞图像（尽量出现一个细胞）即可等待文本框返回结果！
 
 
-**# 补充 #**
-
-
-项目中Xcetion_Cell_API.py文件为API服务器端程序，返回json格式识别结果，可以通过部署在在服务器来供微信小程序，APP等调用！
+**# 相关模型资源 #**
 
 
 4种细胞识别神经网络模型（准确率更高）
@@ -67,6 +61,13 @@ A program with Xception which can identify a variety of cells
 下载链接链接：https://pan.baidu.com/s/1xY5C5x9iDkS-dr2QGtcGng 提取码：X1z9
 
 
+**# 补充 #**
+
+
+项目中Xcetion_Cell_API.py文件为API服务器端程序，返回json格式识别结果，可以通过部署在在服务器来供微信小程序，APP等调用！
+
+
+
 注意：本程序已经打包部分tensorflow环境，初次加载模型启动需要一段时间（10s或更长），退出需要重新加载模型，请耐心等待！
 
 
@@ -74,7 +75,6 @@ A program with Xception which can identify a variety of cells
 
 
 Github主页：https://github.com/kay-cottage
-
 
 
 
