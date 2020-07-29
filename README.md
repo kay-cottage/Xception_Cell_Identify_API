@@ -1,9 +1,10 @@
-# Xception_Cell4_Stable_For_x64
+# Xception_Cell（Xception神经网络细胞形态学识别）
 
 A program with Xception which can identify a variety of cells
 
 
 基于Xception深度可分离卷积神经网络训练的细胞形态识别软件
+
 
 目前能够比较准确识别（测试集准确率大于90%）嗜酸性粒细胞，嗜碱性粒细胞，中性粒细胞，与成熟红细胞4种！
 
@@ -26,9 +27,9 @@ A program with Xception which can identify a variety of cells
 
 
 
-**使用**
-
-1.请先从以下链接下载我已训练好的Xception神经网络模型，（4种细胞识别）
+**Xception_Cell4_Stable_For_x6安装包4使用**
+zai
+1.请先从release上下载.exe安装包安装，然后通过以下链接下载我已训练好的Xception神经网络模型，（4种细胞识别）
 
 
 链接：https://pan.baidu.com/s/1hdLoYS51IqcdVhB01w2yDw 提取码：X1z9
