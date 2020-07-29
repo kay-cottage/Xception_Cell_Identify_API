@@ -22,14 +22,14 @@ parser.add_argument('dataset_root')
 parser.add_argument('classes')
 parser.add_argument('result_root')
 parser.add_argument('--epochs_pre', type=int, default=5)
-parser.add_argument('--epochs_fine', type=int, default=50)
-parser.add_argument('--batch_size_pre', type=int, default=32)
-parser.add_argument('--batch_size_fine', type=int, default=16)
+parser.add_argument('--epochs_fine', type=int, default=50) #迭代次数
+parser.add_argument('--batch_size_pre', type=int, default=16) #显存不存可适当调小
+parser.add_argument('--batch_size_fine', type=int, default=8)  #显存不存可适当调小
 parser.add_argument('--lr_pre', type=float, default=1e-3)
 parser.add_argument('--lr_fine', type=float, default=1e-4)
 parser.add_argument('--snapshot_period_pre', type=int, default=1)
 parser.add_argument('--snapshot_period_fine', type=int, default=1)
-parser.add_argument('--split', type=float, default=0.8)
+parser.add_argument('--split', type=float, default=0.9) #训练集测试集比值
 
 
 def generate_from_paths_and_labels(
@@ -114,7 +114,7 @@ def main(args):
     # NOTE: the top classifier is not included
     base_model = Xception(
         include_top=False,
-        weights='imagenet',
+        weights='xception_weights_tf_dim_ordering_tf_kernels_notop.h5',
         input_shape=(299, 299, 3))
 
     # create a custom top classifier
