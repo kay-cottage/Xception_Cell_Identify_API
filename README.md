@@ -1,4 +1,4 @@
-# Xception_Cell4_Stable_For_amd64
+# Xception_Cell4_Stable_For_x64
 
 A program with Xception which can identify a variety of cells
 
@@ -15,7 +15,7 @@ A program with Xception which can identify a variety of cells
 目前由于训练集数据非常有限，识别种类有待增多，欢迎大家前来改进模型，提供更多数据！
 
 
-为个人想法的简单实现，旨在让更多人方便地用上AI细胞识别技术辅助诊断。
+为个人想法的简单实现，旨在让更多人方便地用上AI细胞识别技术辅助诊断！
 
 
 *注意：禁止用于商业用途，欢迎个人学习交流！*
@@ -42,6 +42,9 @@ A program with Xception which can identify a variety of cells
 
 
 **补充**
+
+
+项目中Xcetion_Cell_API.py文件为API服务器端程序，返回json格式识别结果，可以通过部署在在服务器来供微信小程序，APP等调用！
 
 
 4种细胞识别神经网络模型（准确率更高）
